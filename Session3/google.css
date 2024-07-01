@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: #202124;
+}
+
+
+.navBar {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+.navItems {
+    margin: 5px;
+    padding: 5px;
+    /* background: red; */
+    text-decoration: none;
+}
+
+.text {
+    padding-top: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.box {
+    width: 100vw;
+    margin-top: 30px;
+}
+
+.googleBox {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+h1 {
+    /* font-size: 100px; */
+    align-content: end;
+    font-size: 90px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman';
+
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchBar {
+    display: flex;
+    border: 0.1px solid wheat;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    /* justify-content:space-around; */
+}
+
+.searchIcon {
+    margin: 5px 10px 5px 5px;
+}
+
+input {
+    background-color: #202124 ;
+    width: 600px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 2px;
+    height: 30px;
+}
+
+.sideIcon {
+    margin: 5px 10px 5px 12px;
+    display: flex;
+    /* justify-content: right; */
+    align-items: flex-end;
+    align-self: self-end;
+    position: relative;
+    left: 15px;
+}
+
+button {
+    background-color: #303134;
+    margin: 10px 5px 10px 5px;
+    padding: 5px 10px 5px 10px;
+    height: 40px;
+    width: 145px;
+    border: none;
+    font-size: 17px;
+}
+
+.laguages {
+    display: flex;
+    justify-content: center;
+}
+
+.India {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    width: 50px;
+}
+
+span a {
+    padding: 5px;
+    color: #70a1ff;
+}
+
+footer {
+    /* display: flex; */
+    background: #171717;
+    margin-top: 50px;
+    font-size: 15px;
+    position: fixed;
+    margin-left: -7px;
+    bottom: 0;
+    width: 100%;
+}
+
+.lowerBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+}
+
+.footerItems {
+    margin: 5px;
+    padding: 10px;
+}
+
+.right {
+    display: flex;
+    padding-right: 20px;
+}

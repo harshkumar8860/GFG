@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right to Left Text</title>
+    <style>
+        .rtl-text {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+        a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+    </style>
+</head>
+<body>
+    <p class="rtl-text">Hello how are you?</p>
+    <a href="">HTML</a>
+</body>
+</html>
