@@ -27,17 +27,17 @@ function DataFetchUsingApi() {
     <p>Loading...</p>
   ) : (
     <div>
-      <div>
+      <div className="Container">
         {products.map((products) => (
           <div className="product">
-            <img height="100px" width="100px" src={products.image} />
-            <h2>{products.title}</h2>
-            <NavLink to={`product/${products.id}`}>
-              <button>Buy Now</button>
+            <img className="HomePageImage" height="100px" width="75px" src={products.image} />
+            <h5 className="ProductTitle">{products.title}</h5>
+            <h5 className="ProductPrice">${products.price}</h5>
+            <NavLink className='Link' to={`product/${products.id}`}>
+              <button className="BuyNowButton">Buy Now</button>
             </NavLink>
-            <h2>{products.price}</h2>
-            <p>{products.description}</p>
-            <hr />
+            {/* <p>{products.description}</p> */}
+            {/* <hr /> */}
           </div>
         ))}
       </div>

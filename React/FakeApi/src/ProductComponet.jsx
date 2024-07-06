@@ -27,8 +27,8 @@ function ProductComponet() {
     <div>
       <img height='200px' width='200px' src={item.image} alt="" />
       <h2>{item.title}</h2>
-      <h2>{item.description}</h2>
       <h2>{item.price}</h2>
+      <h2>{item.description}</h2>
     </div>
   );
 }
