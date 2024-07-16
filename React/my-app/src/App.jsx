@@ -20,7 +20,7 @@ function App({ name, branch, number }) {
           if (text === "Hello!") {
             setText("Bye!");
           } else {
-            setText("Hello!");
+            setText("Hello!");``
           }
         }}
       >
