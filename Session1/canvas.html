@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #myCan {
+      width: 80%;
+      height: 80%;
+      background: #ffffff;
+    }
+  </style>
+  <body>
+    <canvas id="myCan" width="500px" height="500px">hello</canvas>
+  </body>
+  <script>
+    const canvas = document.getElementById("myCan");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth - 100;
+
+    //fill rect
+    // ctx.fillStyle = "pink"
+    // ctx.fillRect(20,25,100,50)
+    // ctx.fillStyle = "red"
+    // ctx.fillRect(130,25,100,50)
+
+    // bordered Rect or strokes
+    // ctx.lineWidth = 2;
+    // ctx.strokeStyle = "green";
+    // ctx.strokeRect(20,20,100,50);
+    // ctx.lineWidth = 2;
+    // ctx.strokeStyle = "red";
+    // ctx.strokeRect(130,20,100,50);
+
+    // clear rect
+    // ctx.fillStyle = "pink"
+    // ctx.fillRect(20,25,100,50)
+    // ctx.clearRect(25,30,90,40)
+
+    // fill text
+    // ctx.font = "30px Arial";
+    // ctx.fillStyle = "purple";
+    // ctx.fillText("Hey, There!!", 200, 50);
+
+    // stoke text
+    // ctx.strokeText("Hey, There!!",400,50)
+
+    // lines
+    // ctx.beginPath();
+    // ctx.moveTo(200, 150);
+    // ctx.lineTo(500, 150);
+    // ctx.lineTo(500, 250);
+    // ctx.lineTo(200, 250);
+    // ctx.lineTo(200, 150);
+
+    // ctx.lineWidth = 3;
+    // ctx.strokeStyle = "red";
+    // ctx.stroke();
+    // ctx.fillStyle = "blue";
+    // ctx.fill()
+
+    //shapes circle
+    // ctx.beginPath();
+    // ctx.lineWidth = 5
+    // ctx.arc(200, 150, 70,0, Math.PI*2);
+    // ctx.strokeStyle = "red"
+    // ctx.stroke()
+    // ctx.fillStyle = "blue"
+    // ctx.fill()
+
+    // triangle
+    // ctx.beginPath();
+    // ctx.moveTo(300,300);
+    // ctx.lineTo(500,300);
+    // ctx.lineTo(400,200);
+    // ctx.lineTo(300,300);
+    // ctx.lineWidth = 3;
+    // ctx.strokeStyle = "red"
+    // ctx.stroke();
+
+    // hexagon
+
+    // ctx.beginPath()
+    // ctx.moveTo(300,200);
+    // ctx.lineTo(500,200);
+    // ctx.lineTo(550,275);
+    // ctx.lineTo(500,350);
+    // ctx.lineTo(300,350);
+    // ctx.lineTo(250,275);
+    // ctx.lineTo(300,200);
+    // ctx.fillStyle = "grey"
+    // ctx.fill();
+    // ctx.lineWidth = 3;
+    // ctx.strokeStyle = "green"
+    // ctx.stroke();
+
+
+  </script>
+</html>
