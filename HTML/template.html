@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <template id="myTemplate">
+        <div>
+            <h2>This is a product</h2>
+            <p>It can contain any description</p>
+        </div>
+    </template>
+</body>
+<script>
+    var template = document.getElementById("myTemplate");
+    var product1 = document.importNode(template.content,true); // true means make it visible
+    product1.querySelector('h2').textContent = "Product 1";
+    var product2 = document.importNode(template.content,true);
+    product2.querySelector('h2').textContent = "Product 2";
+
+    document.body.appendChild(product1);
+    document.body.appendChild(product2);
+
+    
+</script>
+</html>
