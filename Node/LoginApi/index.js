@@ -1,15 +1,16 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 
+dotenv.config();
+connectDB();
+
 const app = express();
-const PORT = 5000;
+app.use(express.json());
 
-app.use(bodyParser.json());
-
-// Routes
 app.use('/api/auth', authRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+app.listen(5000, () => {
+  console.log('Server running on port 5000');
 });
