@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="productname" placeholder="Enter Product Name" />
+    <input type="number" id="productprice" placeholder="Enter Product Price" />
+    <button onclick="addProductToCart()">Add to cart</button>
+
+    <div id="output"></div>
+</body>
+<script>
+    // local and session storage is same but the only diff is that local storage saves data on the user's local storage and it is storage, and for session storage once that session is closed the data is lost
+    
+
+     function showCart(){
+        let cart = sessionStorage.getItem("cart")
+        console.log('cart items:', cart); 
+        
+        cart = JSON.parse(cart)
+        let output = document.getElementById("output");
+       
+        if (cart == null || cart.length == 0) {
+            output.innerHTML = "<h1>Cart is Empty</h1>"
+        }else{
+            let table = "<table border='1'>";
+                table += "<tr><th> Product Name</th> <th> Product Price</th></tr>";
+                for(let i = 0; i < cart.length; i++){
+                    table += "<tr>" + "<td>" + cart[i].name + "</td>" + "<td>" + cart[i].price + "</td>"+ "</tr>"
+                }
+                table += "</table>"
+                output.innerHTML = table;
+        }
+    }
+
+    function addProductToCart() {
+        let cart = sessionStorage.getItem("cart")
+
+        if (cart == null) {
+            cart = []
+        }else{
+            cart = JSON.parse(cart)
+        }
+
+        let productname = document.getElementById("productname").value
+        let productprice = document.getElementById("productprice").value
+
+        let product = {
+            name :productname,
+            price :productprice
+        }
+
+        cart.push(product)
+
+     sessionStorage.setItem("cart", JSON.stringify(cart));
+        showCart()
+    }
+        
+    showCart();
+</script>
+</html>
