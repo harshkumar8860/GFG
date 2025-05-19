@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* body{
+        background-color: red;
+    }
+
+    @media screen and (max-width: 1000px){
+        body{
+            background-color: blue;
+        }
+    }
+    @media screen and (max-width: 500px){
+        body{
+            background-color: grey;
+        }
+    } */
+    /* @media screen and (min-width: 800px){
+        body{
+            background-color: yellow;
+        }
+    } */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /* nav ul {
+      background-color: black;
+      color: white;
+      display: flex;
+      list-style-type: none;
+      padding: 10px;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+    ul li a {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+    }
+    @media screen and (max-width:500px) {
+        nav ul{
+            flex-direction: column;
+            align-items: center;
+        }
+    } */
+
+    .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-item{
+        background-color: aqua;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    @media screen and (min-width:800px) {
+        .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 2fr);
+    }
+
+    }
+    @media screen and (max-width:400px) {
+        .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    }
+  </style>
+
+  <body>
+    <!-- <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav> -->
+
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+  </body>
+</html>
